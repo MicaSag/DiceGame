@@ -25,6 +25,8 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 // Create a Intent for call RollActivity
                 Intent intent = new Intent(MainActivity.this,RollActivity.class);
+                // Send the type of the Roll
+                intent.putExtra("max", 6);
                 startActivity(intent);
             }
         });
@@ -37,6 +39,8 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 // Create a Intent for call RollActivity
                 Intent intent = new Intent(MainActivity.this,RollActivity.class);
+                // Send the type of the Roll
+                intent.putExtra("max", 20);
                 startActivity(intent);
             }
         });

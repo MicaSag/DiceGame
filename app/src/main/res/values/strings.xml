@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">DiceGame</string>
+    <string name="diceTitle"> sided dice</string>
+    <string name="sixDicesButton">6 sided dice</string>
+    <string name="twentyDicesButton">20 sided dice</string>
+    <string name="rollButton">Roll the dice...</string>
+    <string name="resultDice">X</string>
+    <string name="diceTypeTitle">X sided dice</string>
+    <string name="titleDice">sides dice</string>
 </resources>

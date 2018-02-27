@@ -1,14 +1,11 @@
 package com.michael.sagot.dicegame;
 
-import android.content.Intent;
+import android.annotation.SuppressLint;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
-
-import org.w3c.dom.Text;
-
 import java.security.SecureRandom;
 
 public class RollActivity extends AppCompatActivity {
@@ -17,14 +14,19 @@ public class RollActivity extends AppCompatActivity {
     protected TextView mTitleDice;
     protected TextView mResultDice;
 
+    protected int mMax;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_roll);
 
+        // Get back input data
+        mMax = getIntent().getIntExtra("max", 0);
+
         // >> Management of the TextView of the dice title <<
         mTitleDice = findViewById(R.id.activity_roll_diceTitle_txt);
-        mTitleDice.setText("6 sided dice");
+        mTitleDice.setText(mMax+getString(R.string.titleDice));
 
         // >> Management of the TextView of the dice result <<
         mResultDice = findViewById(R.id.activity_roll_diceResult_txt);
@@ -39,7 +41,7 @@ public class RollActivity extends AppCompatActivity {
             public void onClick(View view) {
                 // Acquisition of a random value between 1 and 6
                 SecureRandom random = new SecureRandom();
-                mResultDice.setText(String.valueOf(random.nextInt(6) + 1));
+                mResultDice.setText(String.valueOf(random.nextInt(mMax) + 1));
             }
         });
     }

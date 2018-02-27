@@ -10,8 +10,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
-        android:text="X sided dice"
-        android:textSize="30sp" ></TextView>
+        android:text="@string/diceTypeTitle"
+        android:textSize="30sp"/>
 
     <TextView
         android:id="@+id/activity_roll_diceResult_txt"
@@ -20,8 +20,8 @@
         android:layout_gravity="center"
         android:layout_weight="1"
         android:gravity="center"
-        android:text="X"
-        android:textSize="120sp" ></TextView>
+        android:text="@string/resultDice"
+        android:textSize="120sp"/>
 
     <Button
         android:id="@+id/activity_roll_buttonRoll_btn"
@@ -29,6 +29,6 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:padding="20dp"
-        android:text="Roll the dice..."
-        android:textSize="18sp" ></Button>
+        android:text="@string/rollButton"
+        android:textSize="18sp"/>
 </LinearLayout>
