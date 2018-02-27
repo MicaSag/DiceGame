@@ -6,7 +6,7 @@
               android:padding="20dp">
 
     <TextView
-        android:id="@+id/textTitle"
+        android:id="@+id/activity_roll_diceTitle_txt"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
@@ -14,7 +14,7 @@
         android:textSize="30sp" ></TextView>
 
     <TextView
-        android:id="@+id/textResult"
+        android:id="@+id/activity_roll_diceResult_txt"
         android:layout_width="wrap_content"
         android:layout_height="0dp"
         android:layout_gravity="center"
@@ -24,7 +24,7 @@
         android:textSize="120sp" ></TextView>
 
     <Button
-        android:id="@+id/buttonRoll"
+        android:id="@+id/activity_roll_buttonRoll_btn"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
